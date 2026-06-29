@@ -1,0 +1,6 @@
+<svg width="48" height="48" viewBox="0 0 53 53" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="11,0 53,0 53,42 42,53 0,53 0,11" fill="#0F172A" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="26.5" y="35" text-anchor="middle" font-size="22" font-weight="700" font-family="Arial, Helvetica, sans-serif">
+    <tspan fill="#3B82F6">R</tspan><tspan fill="#FFFFFF">C</tspan>
+  </text>
+</svg>

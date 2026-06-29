@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Renan Casagrande</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER - MENU HAMBURGUER -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo Renan Casagrande">
+                <h1 class="header-name">
+                    <span>Renan</span> Casagrande
+                </h1>
+            </div>
+        
+            <!-- BOTÃO HAMBURGUER (aparece só no mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        
+            <!-- MENU -->
+            <ul class="menu" id="menu">
+                <li><a href="#inicio"      class="menu-link">Início</a></li>
+                <li><a href="#sobre"       class="menu-link">Sobre</a></li>
+                <li><a href="#projetos"    class="menu-link">Projetos</a></li>
+                <li><a href="#tecnologias" class="menu-link">Tecnologias</a></li>
+                <li><a href="#contato"     class="menu-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <p class="hello">Olá! Eu sou</p>
+            <h1>Renan Casagrande</h1>
+            <h2>Desenvolvedor de Software</h2>
+            <p>
+                Desenvolvedor de Software focado na criação de aplicativos, sites e sistemas digitais que tornam o dia a dia mais simples e organizado. Atualmente desenvolvo projetos próprios, como o Kryvar e o ZyroScore, transformando ideias em soluções úteis, intuitivas e em constante evolução.
+            </p>
+            <div class="buttons">
+                <a href="docs/Renan_Casagrande_CV_Desenvolvedor.pdf" download="Curriculo_Renan_Casagrande.pdf">
+                    <i class="fa-solid fa-download"></i>
+                    Baixar Currículo
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Renan-Casagrande" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/renan-casagrande-51731a334/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!--
+                <a href="https://youtube.com/@zikazirdagames?si=2AWkksvIaXrZUYak" target="_blank" rel="noopener noreferrer" aria-label="Canal no YouTube" title="Canal no YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                -->
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="imagens/foto.png" alt="Renan Casagrande">
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="about">
+        <div class="section-container">
+            <div class="section-title">
+                <i class="fa-solid fa-user"></i>
+                <h2>Sobre Mim</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-left">
+                    <p class="about-text">
+                        Gosto de transformar ideias em projetos reais, buscando sempre aprender novas tecnologias e criar soluções simples, úteis e bem organizadas. Atualmente estudo Análise e Desenvolvimento de Sistemas e desenvolvo projetos próprios para evoluir continuamente como desenvolvedor.
+                    </p>
+                    <div class="about-button">
+                        <button id="openAboutModal">Saiba mais sobre mim</button>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>2+</h3>
+                    <span>Aplicativos Desenvolvidos</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>10+</h3>
+                    <span>Tecnologias</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Evolução</h3>
+                    <span>Contínua</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS EM DESTAQUE -->
+    <section id="projetos" class="projects">
+        <div class="section-container">
+            <div class="section-title">
+                <i class="fa-solid fa-cubes"></i>
+                <h2>Projetos em Destaque</h2>
+            </div>
+            <div class="projects-container">
+
+                <!-- KRYVAR -->
+                <article class="project-card" id="kryvar">
+                    <div class="project-logo">
+                        <img src="images/logoKryvar.png" alt="Logo do Kryvar">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Kryvar</h3>
+                            <span class="status publicado">Publicado</span>
+                        </div>
+                        <p>Aplicativo Android para organização pessoal, gerenciamento de eventos, contas, lembretes e datas importantes.</p>
+                        <div class="badges">
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                            <span>Expo</span>
+                            <span>AsyncStorage</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.kryvar.mobile" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fa-brands fa-google-play"></i>
+                                Baixar
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fa-solid fa-circle-info"></i>
+                                Ver Mais
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ZYROSCORE -->
+                <article class="project-card" id="zyroscore">
+                    <div class="project-logo">
+                        <img src="images/logoZyro.png" alt="Logo do ZyroScore">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>ZyroScore</h3>
+                            <span class="status testes">Em Testes</span>
+                        </div>
+                        <p>ZyroScore é uma plataforma criada para facilitar o controle de partidas, jogos e pontuações de forma rápida, moderna e intuitiva.</p>
+                        <div class="badges">
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                            <span>Expo</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-link">
+                                <i class="fa-solid fa-user-plus"></i>
+                                Acessar Teste
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fa-solid fa-circle-info"></i>
+                                Ver Mais
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS DE ESTUDO -->
+    <section class="study-projects" id="estudos">
+        <div class="section-container">
+            <div class="section-title-row">
+                <div class="section-title">
+                    <i class="fa-solid fa-flask"></i>
+                    <h2>Projetos de Estudo</h2>
+                </div>
+            </div>
+            <div class="study-container" id="studyContainer">
+
+                <!-- CARD 1 -->
+                <article class="study-card">
+                    <div class="study-header">
+                        <i class="fa-solid fa-car study-icon"></i>
+                        <h3>Sistema de Vendas de Carros</h3>
+                    </div>
+                    <p>Sistema desktop completo em C# com MySQL, login, cadastros, controle de vendas, pagamentos e geração de PDF. Inclui também o site institucional da concessionária.</p>
+                    <div class="badges">
+                        <span>C#</span><span>WinForms</span><span>MySQL</span><span>MVC</span><span>HTML</span><span>CSS</span>
+                    </div>
+                    <a class="btn-secondary open-study-modal" data-modal="modalEstudo1">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="study-card">
+                    <div class="study-header">
+                        <i class="fa-solid fa-film study-icon"></i>
+                        <h3>Site de Filmes</h3>
+                    </div>
+                    <p>Site com listagem de filmes, trailers do YouTube, sistema de login e CRUD completo. Desenvolvido durante os estudos de desenvolvimento web.</p>
+                    <div class="badges">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a class="btn-secondary open-study-modal" data-modal="modalEstudo2">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="study-card">
+                    <div class="study-header">
+                        <i class="fa-solid fa-code study-icon"></i>
+                        <h3>Projetos C# — Estudos</h3>
+                    </div>
+                    <p>Conjunto de aplicações simples em C# para consolidar lógica de programação, estruturas de decisão, laços de repetição e organização de código.</p>
+                    <div class="badges">
+                        <span>C#</span><span>WinForms</span><span>MVC</span>
+                    </div>
+                    <a class="btn-secondary open-study-modal" data-modal="modalEstudo3">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="study-card">
+                    <div class="study-header">
+                        <i class="fa-solid fa-language study-icon"></i>
+                        <h3>PolyLingua</h3>
+                        <span class="status-mini em-dev">Em Desenvolvimento</span>
+                    </div>
+                    <p>Extensão para Chrome que adiciona tradução visual em tempo real ao WhatsApp Web, exibindo a tradução abaixo da mensagem original em um balão próprio.</p>
+                    <div class="badges">
+                        <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Manifest V3</span>
+                    </div>
+                    <a class="btn-secondary open-study-modal" data-modal="modalEstudo4">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- CARD 5 — oculto -->
+                <article class="study-card study-hidden">
+                    <div class="study-header">
+                        <i class="fa-solid fa-briefcase study-icon"></i>
+                        <h3>Portfólio Pessoal</h3>
+                    </div>
+                    <p>Este portfólio! Desenvolvido do zero com HTML, CSS e JavaScript puro, sem frameworks. Design moderno, dark theme, modais e carrossel customizados.</p>
+                    <div class="badges">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a class="btn-secondary open-study-modal" data-modal="modalEstudo5">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- CARD 6 — oculto -->
+                <article class="study-card study-hidden">
+                    <div class="study-header">
+                        <i class="fa-solid fa-gamepad study-icon"></i>
+                        <h3>Jogo da Forca</h3>
+                    </div>
+                    <p>Jogo da forca desenvolvido em C# com interface gráfica. Adivinhe a palavra antes de perder todas as tentativas.</p>
+                    <div class="badges">
+                        <span>C#</span><span>WinForms</span>
+                    </div>
+                    <a class="btn-secondary open-study-modal" data-modal="modalEstudo6">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- CARD 7 — oculto -->
+                <article class="study-card study-hidden">
+                    <div class="study-header">
+                        <i class="fa-solid fa-table-tennis-paddle-ball study-icon"></i>
+                        <h3>Pong</h3>
+                    </div>
+                    <p>Recriação do clássico jogo Pong desenvolvida em Java com Eclipse IDE. Movimento de raquetes, colisão e sistema de pontuação.</p>
+                    <div class="badges">
+                        <span>Java</span><span>Eclipse IDE</span>
+                    </div>
+                    <a class="btn-secondary open-study-modal" data-modal="modalEstudo7">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+            </div>
+            <div class="ver-mais-wrapper">
+                <button id="btnVerMaisEstudos" class="btn-ver-mais">
+                    Ver mais projetos <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="technologies" id="tecnologias">
+        <div class="section-container">
+            <div class="section-title">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Tecnologias</h2>
+            </div>
+            <div class="technologies-container">
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"><span>React Native</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#"><span>C#</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" alt="Visual Studio"><span>Visual Studio</span></div>
+                <div class="technology-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo"><span>Expo</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+        <div class="section-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-title">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h2>Contato</h2>
+                    </div>
+                    <p>Vamos conversar sobre novos projetos!</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:renan_casagrande@hotmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/renan-casagrande-51731a334/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Renan-Casagrande" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <!--
+                    <a href="https://www.youtube.com/@ZikaZirdaGames" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i> Zika Zirda Games
+                    </a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-copy">
+            © 2026 Renan Casagrande. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- ================================
+         MODAIS — TODOS DENTRO DO BODY
+         ================================ -->
+
+    <!-- MODAL SOBRE MIM -->
+    <div id="aboutModal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" id="closeAboutModal" aria-label="Fechar modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-header">
+                <img src="imagens/foto.png" alt="Renan Casagrande" class="modal-photo">
+                <div class="modal-header-info">
+                    <h2>Renan Casagrande</h2>
+                    <p class="modal-role">Desenvolvedor de Software</p>
+                    <p class="modal-objetivo">
+                        Profissional em transição de carreira para a área de tecnologia, focado em desenvolvimento mobile e web. Apaixonado por criar soluções digitais úteis e intuitivas, com projetos próprios publicados e em desenvolvimento constante.
+                    </p>
+                    <a href="docs/Renan_Casagrande_CV_Desenvolvedor.pdf" download="Curriculo_Renan_Casagrande.pdf" class="modal-download">
+                        <i class="fa-solid fa-download"></i> Baixar Currículo
+                    </a>
+                </div>
+            </div>
+            <div class="modal-divider"></div>
+            <div class="modal-section">
+                <h3 class="modal-section-title"><i class="fa-solid fa-graduation-cap"></i> Formação</h3>
+                <div class="modal-formation-item">
+                    <span class="modal-formation-year">2024 — 2026</span>
+                    <div>
+                        <strong>Técnico em Desenvolvimento de Sistemas</strong>
+                        <p>Senac Mogi Guaçu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-divider"></div>
+            <div class="modal-section">
+                <h3 class="modal-section-title"><i class="fa-solid fa-certificate"></i> Certificados</h3>
+                <div class="modal-certs">
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>Codaí 2.0 — Front-End</strong><span>Growdev • 2025</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>Codaí 3.0 — Back-End</strong><span>Growdev • 2025</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>Dart — Lógica de Programação</strong><span>Growdev • 2025</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>SQL — Banco de Dados</strong><span>Growdev • 2025</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>SQL — Introdução à Banco de Dados</strong><span>Growdev • 2025</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>Lógica de Programação em Java</strong><span>Javanauta • 2025</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>Soft Skills</strong><span>Growdev • 2025</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>IA — Conceitos e Práticas</strong><span>Senac • 2026</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>IA Aplicada a Finanças</strong><span>Senac • 2026</span></div></div>
+                    <div class="modal-cert-item"><i class="fa-solid fa-check-circle"></i><div><strong>Técnico em Desenvolvimento de Sistemas</strong><span>Senac • 2024-2026</span></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL KRYVAR -->
+    <div id="modalKryvar" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close" id="closeModalKryvar" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-banner"><img src="screenshots/bannerKryvar.png" alt="Banner Kryvar"></div>
+            <div class="modal-project-header">
+                <h2>Kryvar</h2>
+                <span class="status publicado">Publicado</span>
+                <a href="https://play.google.com/store/apps/details?id=com.kryvar.mobile" target="_blank" rel="noopener noreferrer" class="modal-link-btn primary">
+                    <i class="fa-brands fa-google-play"></i> Ver na Play Store
+                </a>
+            </div>
+            <p class="modal-project-desc">Aplicativo Android para organização pessoal, gerenciamento de eventos, contas, lembretes e datas importantes. Desenvolvido com foco em praticidade e design intuitivo para o dia a dia.</p>
+            <div class="modal-tech">
+                <span>React Native</span><span>TypeScript</span><span>Expo</span><span>AsyncStorage</span>
+            </div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-images"></i> Galeria</h3>
+            <div class="carousel" id="carouselKryvar">
+                <div class="carousel-thumbs">
+                    <img src="screenshots/home.jpg" alt="Home" class="thumb active" data-index="0">
+                    <img src="screenshots/calendar.jpg" alt="Calendário" class="thumb" data-index="1">
+                    <img src="screenshots/notas.jpg" alt="Notas" class="thumb" data-index="2">
+                    <img src="screenshots/modalCiclo.jpg" alt="Modal Ciclo" class="thumb" data-index="3">
+                    <img src="screenshots/modalfinanc.jpg" alt="Financeiro" class="thumb" data-index="4">
+                </div>
+                <div class="carousel-main">
+                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-up"></i></button>
+                    <div class="carousel-img-wrapper"><img src="screenshots/home.jpg" alt="Screenshot Kryvar" id="carouselKryvarImg"></div>
+                    <button class="carousel-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL ZYROSCORE -->
+    <div id="modalZyro" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close" id="closeModalZyro" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-banner"><img src="screenshots/bannerZyro.png" alt="Banner ZyroScore"></div>
+            <div class="modal-project-header">
+                <h2>ZyroScore</h2>
+                <span class="status testes">Em Testes</span>
+                <a href="#" id="btnAcessarTesteZyro" class="modal-link-btn primary">
+                    <i class="fa-solid fa-user-plus"></i> Acessar Teste
+                </a>
+            </div>
+            <p class="modal-project-desc">ZyroScore é uma plataforma criada para facilitar o controle de partidas, jogos e pontuações de forma rápida, moderna e intuitiva.</p>
+            <div class="modal-tech">
+                <span>React Native</span><span>TypeScript</span><span>Expo</span>
+            </div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-images"></i> Galeria</h3>
+            <div class="carousel" id="carouselZyro">
+                <div class="carousel-thumbs">
+                    <img src="screenshots/homeZyro.jpg" alt="Home" class="thumb active" data-index="0">
+                    <img src="screenshots/truco.jpg" alt="Truco" class="thumb" data-index="1">
+                    <img src="screenshots/cacheta.jpg" alt="Cacheta" class="thumb" data-index="2">
+                    <img src="screenshots/buraco.jpg" alt="Buraco" class="thumb" data-index="3">
+                    <img src="screenshots/tranca.jpg" alt="Tranca" class="thumb" data-index="4">
+                </div>
+                <div class="carousel-main">
+                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-up"></i></button>
+                    <div class="carousel-img-wrapper"><img src="screenshots/homeZyro.jpg" alt="Screenshot ZyroScore" id="carouselZyroImg"></div>
+                    <button class="carousel-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL INSTRUÇÕES TESTE -->
+    <div id="modalTeste" class="modal-overlay">
+        <div class="modal-box modal-teste-box">
+            <button class="modal-close" id="closeModalTeste" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-teste-header">
+                <i class="fa-solid fa-flask"></i>
+                <div>
+                    <h2>Acessar Teste — ZyroScore</h2>
+                    <p>Siga os passos abaixo na ordem correta</p>
+                </div>
+            </div>
+            <div class="modal-divider"></div>
+            <div class="modal-teste-aviso">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>O Google exige que o aplicativo tenha no mínimo <strong>12 testadores ativos por 14 dias consecutivos</strong> antes de poder ser publicado oficialmente. Sua participação é muito importante!</p>
+            </div>
+            <div class="modal-teste-steps">
+                <div class="teste-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Entre no grupo de testadores</h3>
+                        <p>Acesse o grupo oficial do Google Groups para se tornar um testador autorizado. Sem isso, o download do app em teste não será liberado.</p>
+                        <a href="https://groups.google.com/g/zyroscore-testers" target="_blank" rel="noopener noreferrer" class="modal-link-btn primary">
+                            <i class="fa-solid fa-users"></i> Entrar no Grupo
+                        </a>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="teste-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Baixe o app pela Play Store</h3>
+                        <p>Após entrar no grupo, acesse o link abaixo para baixar a versão de teste. Pode levar alguns minutos para o acesso ser liberado.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.zyroscore.mobile" target="_blank" rel="noopener noreferrer" class="modal-link-btn primary">
+                            <i class="fa-brands fa-google-play"></i> Baixar na Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 1 — Sistema C# -->
+    <div id="modalEstudo1" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close close-study-modal" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-project-header">
+                <h2>Sistema de Vendas de Carros</h2>
+                <span class="status concluido">Concluído</span>
+            </div>
+            <p class="modal-project-desc">Sistema desktop completo desenvolvido em C# (WinForms) e MySQL, com foco em simular um ambiente real de uma empresa. Desenvolvido durante o curso Técnico em Desenvolvimento de Sistemas (SENAC).</p>
+            <p class="modal-project-desc"><strong class="destaque">Funcionalidades:</strong> Login com controle de permissões · Cadastro de clientes, produtos, fornecedores e funcionários · Sistema de vendas com histórico · Controle de pagamento · Geração de PDF · Estrutura MVC.</p>
+            <div class="modal-tech"><span>C#</span><span>WinForms</span><span>MySQL</span><span>MVC</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-video"></i> Sistema C# em funcionamento</h3>
+            <div class="modal-video-wrapper">
+                <video controls><source src="videos/ProjetoCSharp.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video>
+            </div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-globe"></i> Site da Concessionária</h3>
+            <div class="carousel" id="carouselEstudo1">
+                <div class="carousel-thumbs">
+                    <img src="screenshots/homeConce.png" alt="Home" class="thumb active" data-index="0">
+                    <img src="screenshots/listarConce.png" alt="Listar" class="thumb" data-index="1">
+                </div>
+                <div class="carousel-main">
+                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-up"></i></button>
+                    <div class="carousel-img-wrapper"><img src="screenshots/homeConce.png" alt="Site Concessionária" id="carouselEstudo1Img"></div>
+                    <button class="carousel-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2 — Site de Filmes -->
+    <div id="modalEstudo2" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close close-study-modal" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-project-header">
+                <h2>Site de Filmes</h2>
+                <span class="status concluido">Concluído</span>
+            </div>
+            <p class="modal-project-desc">Site com listagem de filmes, trailers do YouTube incorporados, sistema de login e CRUD completo. Desenvolvido durante os estudos de desenvolvimento web.</p>
+            <div class="modal-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-images"></i> Galeria</h3>
+            <div class="carousel" id="carouselEstudo2">
+                <div class="carousel-thumbs">
+                    <img src="screenshots/homeFilme.png" alt="Home" class="thumb active" data-index="0">
+                    <img src="screenshots/listarFilme.png" alt="Filmes" class="thumb" data-index="1">
+                    <img src="screenshots/loginFilme.png" alt="Login" class="thumb" data-index="2">
+                </div>
+                <div class="carousel-main">
+                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-up"></i></button>
+                    <div class="carousel-img-wrapper"><img src="screenshots/homeFilme.png" alt="Site de Filmes" id="carouselEstudo2Img"></div>
+                    <button class="carousel-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3 — Projetinhos C# -->
+    <div id="modalEstudo3" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close close-study-modal" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-project-header">
+                <h2>Projetos C# — Estudos</h2>
+                <span class="status concluido">Concluído</span>
+            </div>
+            <p class="modal-project-desc">Conjunto de aplicações simples desenvolvidas em C# para consolidar lógica de programação, estruturas de decisão, laços de repetição e organização de código.</p>
+            <div class="modal-mini-list">
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Média Aritmética Escolar (3 notas)</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Calculadora de IMC</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Serviços de Petshop</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Conversão de Comprimento, Massa e Capacidade</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Conversor de Temperatura</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Resistência Elétrica</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Simulador MRUV</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Custo de Viagem</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Simulador de Empréstimo</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Mini Serviços de Carros</div>
+            </div>
+            <div class="modal-tech"><span>C#</span><span>WinForms</span><span>MVC</span></div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-video"></i> Demonstração</h3>
+            <div class="modal-video-wrapper">
+                <video controls><source src="videos/ProjetinhosCSharp.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4 — PolyLingua -->
+    <div id="modalEstudo4" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close close-study-modal" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-project-header">
+                <h2>PolyLingua</h2>
+                <span class="status em-dev">Em Desenvolvimento</span>
+                <a class="modal-link-btn secondary disabled"><i class="fa-brands fa-chrome"></i> Em breve na Chrome Web Store</a>
+            </div>
+            <p class="modal-project-desc">Extensão para Chrome que adiciona tradução visual em tempo real ao WhatsApp Web. O usuário vê a mensagem original e a tradução em um balão logo abaixo.</p>
+            <p class="modal-project-desc"><strong class="destaque">Objetivo:</strong> Criar uma experiência mais intuitiva que tradutores tradicionais, preservando o contexto da mensagem, sem alterar o funcionamento do WhatsApp Web.</p>
+            <div class="modal-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Chrome Manifest V3</span></div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-list-check"></i> Funcionalidades Planejadas</h3>
+            <div class="modal-mini-list">
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Tradução automática das mensagens recebidas</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Tradução das mensagens enviadas</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Balões de tradução personalizados</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Suporte a múltiplos idiomas</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Configuração de idioma padrão</div>
+                <div class="mini-item"><i class="fa-solid fa-check"></i> Diferentes estilos visuais para os balões</div>
+                <div class="mini-item pending"><i class="fa-solid fa-clock"></i> Integração com Google Translate / DeepL</div>
+            </div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-spinner"></i> Progresso Atual</h3>
+            <div class="modal-mini-list">
+                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Estrutura inicial criada</div>
+                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Manifest V3 configurado</div>
+                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Content Script implementado</div>
+                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Injeção de elementos validada</div>
+                <div class="mini-item pending"><i class="fa-solid fa-clock"></i> Leitura de mensagens e integração com API</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 5 — Portfólio -->
+    <div id="modalEstudo5" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close close-study-modal" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-project-header">
+                <h2>Portfólio Pessoal</h2>
+                <span class="status concluido">Concluído</span>
+            </div>
+            <p class="modal-project-desc">Este portfólio! Desenvolvido do zero com HTML, CSS e JavaScript puro, sem nenhum framework. Design moderno com dark theme, modais animados, carrossel customizado e layout responsivo.</p>
+            <div class="modal-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+    </div>
+
+    <!-- MODAL 6 — Forca -->
+    <div id="modalEstudo6" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close close-study-modal" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-project-header">
+                <h2>Jogo da Forca</h2>
+                <span class="status concluido">Concluído</span>
+            </div>
+            <p class="modal-project-desc">Jogo da Forca desenvolvido em C# com interface gráfica WinForms. Adivinhe a palavra antes de perder todas as tentativas.</p>
+            <div class="modal-tech"><span>C#</span><span>WinForms</span></div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-images"></i> Galeria</h3>
+            <div class="carousel" id="carouselEstudo6">
+                <div class="carousel-thumbs">
+                    <img src="screenshots/forca1.png" alt="Forca 1" class="thumb active" data-index="0">
+                    <img src="screenshots/forca2.png" alt="Forca 2" class="thumb" data-index="1">
+                    <img src="screenshots/forca3.png" alt="Forca 3" class="thumb" data-index="2">
+                </div>
+                <div class="carousel-main">
+                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-up"></i></button>
+                    <div class="carousel-img-wrapper"><img src="screenshots/forca1.png" alt="Jogo da Forca" id="carouselEstudo6Img"></div>
+                    <button class="carousel-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 7 — Pong -->
+    <div id="modalEstudo7" class="modal-overlay">
+        <div class="modal-box modal-project">
+            <button class="modal-close close-study-modal" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-project-header">
+                <h2>Pong</h2>
+                <span class="status concluido">Concluído</span>
+            </div>
+            <p class="modal-project-desc">Recriação do clássico jogo Pong desenvolvida em Java com Eclipse IDE. Movimento de raquetes, detecção de colisão e sistema de pontuação.</p>
+            <div class="modal-tech"><span>Java</span><span>Eclipse IDE</span></div>
+            <div class="modal-divider"></div>
+            <h3 class="modal-section-title"><i class="fa-solid fa-images"></i> Galeria</h3>
+            <div class="carousel" id="carouselEstudo7">
+                <div class="carousel-thumbs">
+                    <img src="screenshots/pong1.png" alt="Pong 1" class="thumb active" data-index="0">
+                    <img src="screenshots/pong2.png" alt="Pong 2" class="thumb" data-index="1">
+                </div>
+                <div class="carousel-main">
+                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-up"></i></button>
+                    <div class="carousel-img-wrapper"><img src="screenshots/pong1.png" alt="Pong" id="carouselEstudo7Img"></div>
+                    <button class="carousel-btn next" aria-label="Próximo"><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
