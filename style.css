@@ -1178,6 +1178,25 @@ footer {
 .mini-item.pending i { color: #f59e0b; }
 
 /* ================================
+   ECHOBUBBLE — Logo placeholder   
+   ================================ */
+
+.echo-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #3b5bdb, #7c3aed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.echo-logo i {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+/* ================================
    RESPONSIVIDADE — MOBILE
    ================================ */
 @media (max-width: 768px) {

@@ -192,6 +192,35 @@ function fecharModalTeste() {
 }
 
 // ================================
+// MODAL ECHOBUBBLE 
+// ================================
+
+const btnVerMaisEcho  = document.querySelector('.open-echo-modal');
+const modalEcho       = document.getElementById('modalEcho');
+const closeModalEcho  = document.getElementById('closeModalEcho');
+
+btnVerMaisEcho.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalEcho.classList.add('active');
+    document.body.style.overflow = 'hidden';
+});
+
+closeModalEcho.addEventListener('click', () => fecharModalEcho());
+
+modalEcho.addEventListener('click', (e) => {
+    if (e.target === modalEcho) fecharModalEcho();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalEcho.classList.contains('active')) fecharModalEcho();
+});
+
+function fecharModalEcho() {
+    modalEcho.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// ================================
 // PROJETOS DE ESTUDO — MODAIS + CARROSSEIS + VER MAIS
 // ================================
 
@@ -292,4 +321,10 @@ initCarrossel('carouselEstudo6', 'carouselEstudo6Img', [
 initCarrossel('carouselEstudo7', 'carouselEstudo7Img', [
     { src: 'screenshots/pong1.png', alt: 'Pong 1' },
     { src: 'screenshots/pong2.png', alt: 'Pong 2' },
+]);
+
+initCarrossel('carouselEcho', 'carouselEchoImg', [
+    { src: 'screenshots/printEcho3.png', alt: 'Popup de idiomas' },
+    { src: 'screenshots/printEcho2.png', alt: 'Mensagem com erro' },
+    { src: 'screenshots/printEcho1.png', alt: 'Conversa traduzida' },
 ]);
