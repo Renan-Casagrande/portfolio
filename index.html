@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="imagens/foto.png" alt="Renan Casagrande">
+            <img src="images/foto.jpg" alt="Renan Casagrande">
         </div>
     </section>
 
@@ -187,7 +187,7 @@
                     <div class="project-content">
                         <div class="project-header">
                             <h3>EchoBubble</h3>
-                            <span class="status em-dev">Em Desenvolvimento</span>
+                            <span class="status publicado">Publicada</span>
                         </div>
                         <p>
                             Extensão para Chrome que traduz mensagens do WhatsApp Web em tempo real, exibindo a tradução logo abaixo da mensagem original. Sem copiar, sem colar, sem sair da conversa.
@@ -199,6 +199,13 @@
                             <span>Manifest V3</span>
                         </div>
                         <div class="project-buttons">
+                            <a href="https://chromewebstore.google.com/detail/echobubble/nihgeeklpgnenhaopikdbaoeljlajakj"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link">
+                                <i class="fa-brands fa-chrome"></i>
+                                Instalar
+                            </a>
                             <a href="#" class="project-link open-echo-modal">
                                 <i class="fa-solid fa-circle-info"></i>
                                 Ver Mais
@@ -230,7 +237,7 @@
                     </div>
                     <p>Sistema desktop completo em C# com MySQL, login, cadastros, controle de vendas, pagamentos e geração de PDF. Inclui também o site institucional da concessionária.</p>
                     <div class="badges">
-                        <span>C#</span><span>WinForms</span><span>MySQL</span><span>MVC</span><span>HTML</span><span>CSS</span>
+                        <span>C#</span><span>WinForms</span><span>MySQL</span><span>MVC</span>
                     </div>
                     <a class="btn-secondary open-study-modal" data-modal="modalEstudo1">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
@@ -383,7 +390,7 @@
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <div class="modal-header">
-                <img src="imagens/foto.png" alt="Renan Casagrande" class="modal-photo">
+                <img src="images/foto.jpg" alt="Renan Casagrande" class="modal-photo">
                 <div class="modal-header-info">
                     <h2>Renan Casagrande</h2>
                     <p class="modal-role">Desenvolvedor de Software</p>
@@ -554,29 +561,35 @@
     </div>
 
     <!-- MODAL ECHOBUBBLE -->
-    
+
     <div id="modalEcho" class="modal-overlay">
         <div class="modal-box modal-project">
-    
+
             <button class="modal-close" id="closeModalEcho" aria-label="Fechar modal">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-    
+
             <!-- BANNER -->
             <div class="modal-banner">
                 <img src="screenshots/bannerEcho.png" alt="Banner EchoBubble">
             </div>
-    
-            <!-- NOME + STATUS + LINK -->
+
+            <!-- NOME + STATUS + LINKS -->
             <div class="modal-project-header">
                 <h2>EchoBubble</h2>
-                <span class="status em-dev">Em Desenvolvimento</span>
-                <a class="modal-link-btn secondary disabled">
+                <span class="status publicado">Publicada</span>
+
+                <a href="https://chromewebstore.google.com/detail/echobubble/nihgeeklpgnenhaopikdbaoeljlajakj"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="modal-link-btn secondary">
                     <i class="fa-brands fa-chrome"></i>
-                    Em breve na Chrome Web Store
+                    Ver na Chrome Web Store
                 </a>
+
+                <!-- Ativar amanhã após publicar no LinkedIn -->
                 <!--
-                <a href="https://www.linkedin.com/posts/renan-casagrande-51731a334_kryvar-appandroid-produtividade-ugcPost-7478340335958605824-YFFq/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFQNe2MBuXpjE1wMeDwcvNugTKqOnGEN-CI"
+                <a href="SEU_LINK_LINKEDIN_AQUI"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="modal-link-btn secondary">
@@ -585,16 +598,16 @@
                 </a>
                 -->
             </div>
-    
+
             <!-- DESCRIÇÃO -->
             <p class="modal-project-desc">
                 Extensão para navegadores baseados no Chrome que adiciona tradução visual em tempo real ao WhatsApp Web. O usuário continua vendo a mensagem original enquanto a tradução aparece logo abaixo em um balão próprio — sem copiar, sem colar, sem sair da conversa.
             </p>
-    
+
             <p class="modal-project-desc">
-                <strong class="destaque">27 idiomas disponíveis.</strong> Mais idiomas em breve. Privado e seguro — seus dados ficam apenas no seu dispositivo.
+                <strong class="destaque">27 idiomas disponíveis.</strong> Privado e seguro — seus dados ficam apenas no seu dispositivo.
             </p>
-    
+
             <!-- TECNOLOGIAS -->
             <div class="modal-tech">
                 <span>JavaScript</span>
@@ -602,47 +615,28 @@
                 <span>CSS</span>
                 <span>Chrome Manifest V3</span>
             </div>
-    
+
             <div class="modal-divider"></div>
-    
+
             <!-- FUNCIONALIDADES -->
             <h3 class="modal-section-title">
                 <i class="fa-solid fa-list-check"></i>
                 Funcionalidades
             </h3>
-    
+
             <div class="modal-mini-list">
                 <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Tradução automática das mensagens recebidas</div>
                 <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Balões de tradução personalizados</div>
                 <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> 27 idiomas suportados</div>
+                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Cache inteligente com expiração automática</div>
+                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Suporte a mensagens longas (divisão automática)</div>
                 <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Privado — dados ficam apenas no dispositivo</div>
-                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Funciona diretamente no WhatsApp Web</div>
-                <div class="mini-item pending"><i class="fa-solid fa-clock"></i> Tradução das mensagens enviadas</div>
-                <div class="mini-item pending"><i class="fa-solid fa-clock"></i> Configuração de idioma padrão</div>
+                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Funciona diretamente no WhatsApp Web</div>                
                 <div class="mini-item pending"><i class="fa-solid fa-clock"></i> Diferentes estilos visuais para os balões</div>
                 <div class="mini-item pending"><i class="fa-solid fa-clock"></i> Mais idiomas em breve</div>
             </div>
-    
-            <div class="modal-divider"></div>
-    
-            <!-- PROGRESSO -->
-            <h3 class="modal-section-title">
-                <i class="fa-solid fa-spinner"></i>
-                Progresso Atual
-            </h3>
-            <div class="modal-mini-list">
-                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Estrutura inicial criada</div>
-                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Manifest V3 configurado</div>
-                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Content Script implementado</div>
-                <div class="mini-item done"><i class="fa-solid fa-check-circle"></i> Injeção de elementos no WhatsApp Web validada</div>
-                <div class="mini-item pending"><i class="fa-solid fa-clock"></i> Integração com API de tradução</div>
-                <div class="mini-item pending"><i class="fa-solid fa-clock"></i> Publicação na Chrome Web Store</div>
-            </div>
 
-            <!-- ================================
-                GALERIA ECHOBUBBLE                
-                ================================ -->
-
+            <!-- GALERIA -->
             <div class="modal-divider"></div>
 
             <h3 class="modal-section-title">
@@ -671,7 +665,7 @@
                 </div>
 
             </div>
-    
+
         </div>
     </div>
 
@@ -685,7 +679,7 @@
             </div>
             <p class="modal-project-desc">Sistema desktop completo desenvolvido em C# (WinForms) e MySQL, com foco em simular um ambiente real de uma empresa. Desenvolvido durante o curso Técnico em Desenvolvimento de Sistemas (SENAC).</p>
             <p class="modal-project-desc"><strong class="destaque">Funcionalidades:</strong> Login com controle de permissões · Cadastro de clientes, produtos, fornecedores e funcionários · Sistema de vendas com histórico · Controle de pagamento · Geração de PDF · Estrutura MVC.</p>
-            <div class="modal-tech"><span>C#</span><span>WinForms</span><span>MySQL</span><span>MVC</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="modal-tech"><span>C#</span><span>WinForms</span><span>MySQL</span><span>MVC</span></div>
             <div class="modal-divider"></div>
             <h3 class="modal-section-title"><i class="fa-solid fa-video"></i> Sistema C# em funcionamento</h3>
             <div class="modal-video-wrapper">
