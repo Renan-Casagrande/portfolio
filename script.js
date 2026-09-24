@@ -160,36 +160,37 @@ thumbsZyro.forEach((thumb, i) => thumb.addEventListener('click', () => setSlideZ
 prevZyro.addEventListener('click', () => setSlideZyro(currentZyro - 1));
 nextZyro.addEventListener('click', () => setSlideZyro(currentZyro + 1));
 
-document.getElementById('btnAcessarTesteZyro').addEventListener('click', (e) => {
-    e.preventDefault();
-    fecharModalZyro();
-    document.getElementById('modalTeste').classList.add('active');
-    document.body.style.overflow = 'hidden';
-});
+// document.getElementById('btnAcessarTesteZyro').addEventListener('click', (e) => {
+//     e.preventDefault();
+//     fecharModalZyro();
+//     document.getElementById('modalTeste').classList.add('active');
+//     document.body.style.overflow = 'hidden';
+// });
 
 // ================================
 // MODAL INSTRUÇÕES TESTE
 // ================================
-const modalTeste      = document.getElementById('modalTeste');
-const closeModalTeste = document.getElementById('closeModalTeste');
-const btnTesteCard    = document.querySelector('#zyroscore .project-link:first-child');
 
-btnTesteCard.addEventListener('click', (e) => {
-    e.preventDefault();
-    modalTeste.classList.add('active');
-    document.body.style.overflow = 'hidden';
-});
+// const modalTeste      = document.getElementById('modalTeste');
+// const closeModalTeste = document.getElementById('closeModalTeste');
+// const btnTesteCard    = document.querySelector('#zyroscore .project-link:first-child');
 
-closeModalTeste.addEventListener('click', () => fecharModalTeste());
-modalTeste.addEventListener('click', (e) => { if (e.target === modalTeste) fecharModalTeste(); });
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalTeste.classList.contains('active')) fecharModalTeste();
-});
+// btnTesteCard.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     modalTeste.classList.add('active');
+//     document.body.style.overflow = 'hidden';
+// });
 
-function fecharModalTeste() {
-    modalTeste.classList.remove('active');
-    document.body.style.overflow = '';
-}
+// closeModalTeste.addEventListener('click', () => fecharModalTeste());
+// modalTeste.addEventListener('click', (e) => { if (e.target === modalTeste) fecharModalTeste(); });
+// document.addEventListener('keydown', (e) => {
+//     if (e.key === 'Escape' && modalTeste.classList.contains('active')) fecharModalTeste();
+// });
+
+// function fecharModalTeste() {
+//     modalTeste.classList.remove('active');
+//     document.body.style.overflow = '';
+// }
 
 // ================================
 // MODAL ECHOBUBBLE 
